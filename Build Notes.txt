@@ -1,0 +1,28 @@
+The Block 1.3
+It's a Cube! Oh, It's a Block, At least this one doesn't move!
+
+Module ID: theBlock
+
+Created By: EggFriedCheese
+Thanks for Coding Help: Royal_Flu$h, Red031000, Skyeward, Timwi and Ryaninator
+
+Manual available here: https://ktane.timwi.de/HTML/The%20Block.html
+
+---
+Build 1.3 Notes
+Manual Reprint Required
+
+Build 1.2 Notes
+Fixed LFA Logging
+
+Build 1.1 Notes
+(Major Change) Changed Strike Handling (Strike Resets Button Input) (Thanks to Ryaninator)
+(Major Change) Changed Reset Handling (Block Colours Now Reset on Strike)
+Logging Order Changed
+Manual Reprint Required
+
+Build 1.01 Notes
+Removed Empty Array Element (Thanks to Royal_Flu$h)
+
+Build 1.0 Notes
+-Initial Release
