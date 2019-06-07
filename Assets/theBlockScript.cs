@@ -66,11 +66,11 @@ public class theBlockScript : MonoBehaviour
                 cubeFaces[i].material = cubeFacesMats[(int)cubeFaceColours[i]];
         }
             Debug.LogFormat("[The Block #{0}] Face 1 Colour: {1}.", moduleId, cubeFaceColours[0]);
-            Debug.LogFormat("[The Block #{0}] Face 1 Colour: {1}.", moduleId, cubeFaceColours[1]);
-            Debug.LogFormat("[The Block #{0}] Face 1 Colour: {1}.", moduleId, cubeFaceColours[2]);
-            Debug.LogFormat("[The Block #{0}] Face 1 Colour: {1}.", moduleId, cubeFaceColours[3]);
-            Debug.LogFormat("[The Block #{0}] Face 1 Colour: {1}.", moduleId, cubeFaceColours[4]);
-            Debug.LogFormat("[The Block #{0}] Face 1 Colour: {1}.", moduleId, cubeFaceColours[5]);
+            Debug.LogFormat("[The Block #{0}] Face 2 Colour: {1}.", moduleId, cubeFaceColours[1]);
+            Debug.LogFormat("[The Block #{0}] Face 3 Colour: {1}.", moduleId, cubeFaceColours[2]);
+            Debug.LogFormat("[The Block #{0}] Face 4 Colour: {1}.", moduleId, cubeFaceColours[3]);
+            Debug.LogFormat("[The Block #{0}] Face 5 Colour: {1}.", moduleId, cubeFaceColours[4]);
+            Debug.LogFormat("[The Block #{0}] Face 6 Colour: {1}.", moduleId, cubeFaceColours[5]);
     }
 
     public void Strike()

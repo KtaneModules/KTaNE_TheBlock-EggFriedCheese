@@ -1,4 +1,4 @@
-The Block 1.3
+The Block 1.3.1
 It's a Cube! Oh, It's a Block, At least this one doesn't move!
 
 Module ID: theBlock
@@ -9,6 +9,9 @@ Thanks for Coding Help: Royal_Flu$h, Red031000, Skyeward, Timwi and Ryaninator
 Manual available here: https://ktane.timwi.de/HTML/The%20Block.html
 
 ---
+Build 1.3.1 Notes
+Minor Logging Change
+
 Build 1.3 Notes
 Manual Reprint Required
 
