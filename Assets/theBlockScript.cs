@@ -599,5 +599,26 @@ public class theBlockScript : MonoBehaviour
         }
     }
 
-    
+    private string TwitchHelpMessage = "Interact with the faces of the block by using !{0} press 1,3,5 or !{0} press block, block, block, block, block";
+
+    KMSelectable[] ProcessTwitchCommand(string command)
+    {
+        //Don't require certain casing and take press out of the command
+        //Remove spaces and commas for easier processing of each character.
+        //Replace all instances of "block" with a number for easier processing.
+        command = command.ToLowerInvariant().Replace("press", "").Replace(" ", "").Replace(",","").Replace("block", "7").Replace("cube", "7").Replace("b", "7").Replace("c", "7");
+        foreach (char c in command)
+        {
+            //If we get anything that's not between 1 and 6, tell TP the command was ignored
+            //Chars are just specialized ints, so if we subtract the value of char "0" from a char number, we'll get the int value of that char.
+            if (c - '0' < 1 || c - '0' > 7)
+                return null;
+        }
+        //There's some magic going on here
+        //strings are a collection of chars, and work similarly to arrays or lists.
+        //The "select" function goes through each value of the string and returns a new collection (These are called IEnumerables)
+        //In this case, each char is converted into a KMSelectable, as long as each char is between 1 and 6.
+        //This time we subtract the value of char 1 instead of 0 due to the fact the array starts at 0, but the faces start at 1.
+        return command.Select(x => buttons[x - '1']).ToArray();
+    }
 }
